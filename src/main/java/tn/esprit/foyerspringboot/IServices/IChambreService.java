@@ -1,4 +1,4 @@
-package tn.esprit.foyerspringboot.services;
+package tn.esprit.foyerspringboot.IServices;
 
 import tn.esprit.foyerspringboot.entities.Chambre;
 
@@ -9,4 +9,5 @@ public interface IChambreService {
     Chambre updateChambre(Chambre chambre);
     void deleteChambre(Long id);
     List<Chambre> getAllChambres();
+    Chambre findById(Long id);
 }

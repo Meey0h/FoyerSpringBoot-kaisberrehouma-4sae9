@@ -1,4 +1,4 @@
-package tn.esprit.foyerspringboot.services;
+package tn.esprit.foyerspringboot.IServices;
 import tn.esprit.foyerspringboot.entities.Bloc;
 
 import java.util.List;
