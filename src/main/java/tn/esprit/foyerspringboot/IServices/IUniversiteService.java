@@ -9,4 +9,5 @@ public interface IUniversiteService {
     Universite updateUniversite(Universite universite);
     void deleteUniversite(Long id);
     List<Universite> getAllUniversites();
+    Universite getUniversiteById(Long id);
 }

@@ -32,4 +32,9 @@ public class ReservationController {
     void deleteReservation(@PathVariable Long id){
         reservationService.deleteReservation(id);
     }
+
+    @GetMapping("/findReservationById/{id}")
+    Reservation findReservationById(@PathVariable Long id){
+        return reservationService.getReservationById(id);
+    }
 }

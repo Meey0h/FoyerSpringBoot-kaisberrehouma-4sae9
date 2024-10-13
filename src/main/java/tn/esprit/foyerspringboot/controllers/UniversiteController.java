@@ -32,4 +32,9 @@ public class UniversiteController {
     void deleteUniversite(@PathVariable Long id){
         universiteService.deleteUniversite(id);
     }
+
+    @GetMapping("/findUniversiteById/{id}")
+    Universite findUniversiteById(@PathVariable Long id){
+        return universiteService.getUniversiteById(id);
+    }
 }

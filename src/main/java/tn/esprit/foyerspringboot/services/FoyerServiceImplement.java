@@ -32,4 +32,9 @@ public class FoyerServiceImplement implements IFoyerService {
     public List<Foyer> getAllFoyers() {
         return FoyerRepository.findAll();
     }
+
+    @Override
+    public Foyer getFoyerById(Long id) {
+        return FoyerRepository.findById(id).get();
+    }
 }

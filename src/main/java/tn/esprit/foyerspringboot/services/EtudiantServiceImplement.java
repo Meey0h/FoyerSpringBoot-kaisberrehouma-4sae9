@@ -32,4 +32,9 @@ public class EtudiantServiceImplement implements IEtudiantService {
     public List<Etudiant> getAllEtudiants() {
         return EtudiantRepository.findAll();
     }
+
+    @Override
+    public Etudiant getEtudiantById(Long id) {
+        return EtudiantRepository.findById(id).get();
+    }
 }

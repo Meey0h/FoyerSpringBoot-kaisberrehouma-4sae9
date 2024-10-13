@@ -32,4 +32,9 @@ public class EtudiantController {
     void deleteEtudiant(@PathVariable Long id) {
         etudiantService.deleteEtudiant(id);
     }
+
+    @GetMapping("/findEtudiantById/{id}")
+    Etudiant findEtudiantById(@PathVariable Long id){
+        return etudiantService.getEtudiantById(id);
+    }
 }

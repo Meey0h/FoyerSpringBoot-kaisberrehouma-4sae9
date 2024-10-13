@@ -32,4 +32,9 @@ public class ReservationServiceImplement implements IReservationService {
     public List<Reservation> getAllReservations() {
         return ReservationRepository.findAll();
     }
+
+    @Override
+    public Reservation getReservationById(Long id) {
+        return ReservationRepository.findById(id).get();
+    }
 }

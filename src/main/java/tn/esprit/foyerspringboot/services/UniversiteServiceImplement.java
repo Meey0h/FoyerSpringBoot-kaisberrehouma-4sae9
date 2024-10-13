@@ -32,4 +32,9 @@ public class UniversiteServiceImplement implements IUniversiteService {
     public List<Universite> getAllUniversites() {
         return UniversiteRepository.findAll();
     }
+
+    @Override
+    public Universite getUniversiteById(Long id) {
+        return UniversiteRepository.findById(id).get();
+    }
 }

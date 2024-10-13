@@ -32,4 +32,9 @@ public class BlocServiceImplement implements IBlocService{
     public List<Bloc> getAllBlocs() {
         return BlocRepository.findAll();
     }
+
+    @Override
+    public Bloc findBlocById(Long id) {
+        return BlocRepository.findById(id).get();
+    }
 }
