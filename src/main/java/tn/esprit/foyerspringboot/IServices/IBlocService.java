@@ -8,6 +8,6 @@ public interface IBlocService {
     Bloc updateBloc(Bloc bloc);
     void deleteBloc(Long id);
     List<Bloc> getAllBlocs();
-
     Bloc findBlocById(Long id);
+    void deleteById(Long id);
 }

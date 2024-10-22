@@ -37,4 +37,9 @@ public class UniversiteServiceImplement implements IUniversiteService {
     public Universite getUniversiteById(Long id) {
         return UniversiteRepository.findById(id).get();
     }
+
+    @Override
+    public void deleteById(Long id) {
+        UniversiteRepository.deleteById(id);
+    }
 }

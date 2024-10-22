@@ -37,4 +37,9 @@ public class BlocController {
     Bloc findBlocById(@PathVariable Long id) {
         return blocService.findBlocById(id);
     }
+
+    @DeleteMapping("/deleteById/{id}")
+    void deleteById(@PathVariable Long id) {
+        blocService.deleteById(id);
+    }
 }

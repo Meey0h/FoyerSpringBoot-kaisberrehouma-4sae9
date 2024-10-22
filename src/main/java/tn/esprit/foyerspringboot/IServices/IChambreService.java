@@ -10,4 +10,5 @@ public interface IChambreService {
     void deleteChambre(Long id);
     List<Chambre> getAllChambres();
     Chambre findById(Long id);
+    void deleteById(Long id);
 }

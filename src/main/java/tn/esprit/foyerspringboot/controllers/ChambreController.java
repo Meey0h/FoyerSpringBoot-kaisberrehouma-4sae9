@@ -37,4 +37,9 @@ public class ChambreController {
     Chambre findChambreById(@PathVariable Long id){
         return chambreService.findById(id);
     }
+
+    @DeleteMapping("/deleteChambreById/{id}")
+    void deleteChambreById(@PathVariable Long id){
+        chambreService.deleteById(id);
+    }
 }

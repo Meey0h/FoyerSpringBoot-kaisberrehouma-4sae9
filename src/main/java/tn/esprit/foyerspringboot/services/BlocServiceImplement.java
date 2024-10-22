@@ -37,4 +37,9 @@ public class BlocServiceImplement implements IBlocService{
     public Bloc findBlocById(Long id) {
         return BlocRepository.findById(id).get();
     }
+
+    @Override
+    public void deleteById(Long id) {
+        BlocRepository.deleteById(id);
+    }
 }

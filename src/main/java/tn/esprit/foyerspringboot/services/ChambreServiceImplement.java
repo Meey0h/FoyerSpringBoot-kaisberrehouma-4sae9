@@ -37,4 +37,9 @@ public class ChambreServiceImplement implements IChambreService {
     public Chambre findById(Long id) {
         return chambreRepository.findById(id).get();
     }
+
+    @Override
+    public void deleteById(Long id) {
+        chambreRepository.deleteById(id);
+    }
 }

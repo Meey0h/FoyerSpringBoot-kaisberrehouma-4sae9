@@ -37,4 +37,9 @@ public class EtudiantServiceImplement implements IEtudiantService {
     public Etudiant getEtudiantById(Long id) {
         return EtudiantRepository.findById(id).get();
     }
+
+    @Override
+    public void deleteById(Long id) {
+        EtudiantRepository.deleteById(id);
+    }
 }

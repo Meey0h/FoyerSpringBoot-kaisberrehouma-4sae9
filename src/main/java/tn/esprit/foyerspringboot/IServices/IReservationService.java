@@ -10,4 +10,5 @@ public interface IReservationService {
     void deleteReservation(Long id);
     List<Reservation> getAllReservations();
     Reservation getReservationById(Long id);
+    void deleteById(Long id);
 }

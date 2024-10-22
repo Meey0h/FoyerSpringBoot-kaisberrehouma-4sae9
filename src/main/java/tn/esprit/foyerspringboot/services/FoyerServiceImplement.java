@@ -37,4 +37,9 @@ public class FoyerServiceImplement implements IFoyerService {
     public Foyer getFoyerById(Long id) {
         return FoyerRepository.findById(id).get();
     }
+
+    @Override
+    public void deleteById(Long id) {
+        FoyerRepository.deleteById(id);
+    }
 }

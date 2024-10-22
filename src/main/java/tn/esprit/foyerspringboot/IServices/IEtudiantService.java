@@ -10,4 +10,5 @@ public interface IEtudiantService {
     void deleteEtudiant(Long id);
     List<Etudiant> getAllEtudiants();
     Etudiant getEtudiantById(Long id);
+    void deleteById(Long id);
 }

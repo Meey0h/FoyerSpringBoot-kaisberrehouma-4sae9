@@ -23,7 +23,7 @@ public class Chambre {
     private Long idChambre;
     private Long numeroChambre;
     @Enumerated(EnumType.STRING)
-    private tn.esprit.foyerspringboot.entities.typeChambre typeC;
+    private tn.esprit.foyerspringboot.enums.typeChambre typeC;
 
     @OneToMany
     private List<Reservation> R;

@@ -37,4 +37,9 @@ public class FoyerController {
     Foyer findFoyerById(@PathVariable Long id){
         return foyerService.getFoyerById(id);
     }
+
+    @DeleteMapping("/deleteById/{id}")
+    void deleteById(@PathVariable Long id) {
+        foyerService.deleteById(id);
+    }
 }

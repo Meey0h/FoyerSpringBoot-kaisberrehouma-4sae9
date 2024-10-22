@@ -1,4 +1,4 @@
-package tn.esprit.foyerspringboot.entities;
+package tn.esprit.foyerspringboot.enums;
 
 
 public enum typeChambre {

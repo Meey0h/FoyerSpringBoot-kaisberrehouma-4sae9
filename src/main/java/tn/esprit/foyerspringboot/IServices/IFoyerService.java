@@ -11,4 +11,5 @@ public interface IFoyerService {
     List<Foyer> getAllFoyers();
 
     Foyer getFoyerById(Long id);
+    void deleteById(Long id);
 }

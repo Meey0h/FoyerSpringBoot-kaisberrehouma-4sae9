@@ -37,4 +37,9 @@ public class UniversiteController {
     Universite findUniversiteById(@PathVariable Long id){
         return universiteService.getUniversiteById(id);
     }
+
+    @DeleteMapping("/deleteUniversiteById/{id}")
+    void deleteUniversiteById(@PathVariable Long id){
+        universiteService.deleteById(id);
+    }
 }
